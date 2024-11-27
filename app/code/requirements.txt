@@ -3,3 +3,5 @@ packaging
 dnspython
 requests
 cryptography
+qrcode
+Pillow
