@@ -1,0 +1,15 @@
+services:
+  taller-docker-gonavi:
+    container_name: taller-docker-gonavi
+    build: app/.
+    command: tail -F anything
+    restart: always
+    environment:
+      - SHOW_LEVEL_LOG=3
+    volumes:
+      - ./app/code:/code
+    networks:
+      - gonavi_workshop_net
+networks:
+  gonavi_workshop_net:
+    driver: bridge

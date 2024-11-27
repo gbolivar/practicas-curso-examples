@@ -1,0 +1,5 @@
+python-nmap
+packaging
+dnspython
+requests
+cryptography
